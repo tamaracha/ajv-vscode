@@ -7,9 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.1] - 2021-01-21
+
 ### Added
 
 - markdownDescription keyword
 - defaultSnippets keyword with metaSchema
+
+[Unreleased]: https://github.com/tamaracha/ajv-vscode/compare/v0.0.1...head
+[0.0.1]: https://github.com/tamaracha/ajv-vscode/tags/v0.0.1
 
 <!-- markdownlint-configure-file { "MD024": { "siblings_only": true }} -->
