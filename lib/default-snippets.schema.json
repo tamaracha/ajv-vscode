@@ -1,0 +1,14 @@
+{
+  "title": "Default snippets",
+  "type": "array",
+  "items": {
+    "title": "VSCode snippet",
+    "type": "object",
+    "required": ["label", "body"],
+    "properties": {
+      "label": { "type": "string" },
+      "description": { "type": "string" },
+      "body": {}
+    }
+  }
+}

@@ -1,0 +1,11 @@
+hooks:
+  "before:github:release": npm pack
+github:
+  release: true
+  assets:
+    - "*.tgz"
+plugins:
+  "@release-it/keep-a-changelog":
+    filename: CHANGELOG.md
+    addVersionUrl: true
+    head: main

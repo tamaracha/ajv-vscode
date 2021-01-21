@@ -1,0 +1,58 @@
+{
+  "name": "ajv-vscode",
+  "version": "0.0.1",
+  "description": "Ajv plugin which adds keywords from VSCode for a richer editing experience",
+  "main": "./lib/index.js",
+  "exports": {
+    "require": "./lib/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "dotenv release-it --"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamaracha/ajv-vscode.git"
+  },
+  "keywords": [
+    "AJV",
+    "VSCode",
+    "plugin"
+  ],
+  "author": "Tamara Cook <10754072+tamaracha@users.noreply.github.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tamaracha/ajv-vscode/issues"
+  },
+  "homepage": "https://github.com/tamaracha/ajv-vscode#readme",
+  "files": [
+    "lib"
+  ],
+  "peerDependencies": {
+    "ajv": "^7.0.3"
+  },
+  "devDependencies": {
+    "@release-it/keep-a-changelog": "github:tamaracha/keep-a-changelog",
+    "ajv-cli": "^4.0.1",
+    "dotenv": "^8.2.0",
+    "dotenv-cli": "^4.0.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "markdownlint": "^0.22.0",
+    "markdownlint-cli2": "^0.0.13",
+    "prettier": "^2.2.1",
+    "release-it": "^14.2.2",
+    "standard": "^16.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "standard --fix",
+    "*.{yml,yaml,json}": "prettier --write",
+    "*.schema.{yml,yaml,json}": "ajv compile -s",
+    "*.md": "markdownlint-cli2"
+  }
+}
