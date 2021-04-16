@@ -30,11 +30,11 @@
     "lib"
   ],
   "peerDependencies": {
-    "ajv": "^7.0.3"
+    "ajv": "^8.1.0"
   },
   "devDependencies": {
-    "@release-it/keep-a-changelog": "github:tamaracha/keep-a-changelog",
-    "ajv-cli": "^4.0.1",
+    "@release-it/keep-a-changelog": "^2.2.2",
+    "ajv-cli": "^5.0.0",
     "dotenv": "^8.2.0",
     "dotenv-cli": "^4.0.0",
     "husky": "^6.0.0",
